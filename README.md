@@ -1,16 +1,14 @@
 Getting-and-cleaning-data
 =========================
 
-F# Getting and cleaning data
-
 For creating a tidy data set of wearable computing data originally from http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 ## Files in this repo
-* README.md -- you are reading it right now
+* README.md -- this file
 * CodeBook.md -- codebook describing variables, the data and transformations
-* run_analysis.R -- actual R code
+* run_analysis.R -- R script for the course
 
-## run_analysis.R goals
+## run_analysis.R:
 You should create one R script called run_analysis.R that does the following:
 1. Merges the training and the test sets to create one data set.
 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
@@ -25,11 +23,9 @@ The script assumes it has in it's working directory the following files and fold
 * test/
 * train/
 
-The output is created in working directory with the name of tidy2.txt
+The output is created in working directory with the name of tidy_second.txt
 
-*Note:* the R script is built to run without including any libraries for the purpose of this course.
-
-## run_analysis.R walkthrough
+## Run_analysis.R walkthrough
 It follows the goals step by step.
 
 * Step 1:
@@ -52,4 +48,4 @@ It follows the goals step by step.
   * Create a new data frame by finding the mean for each combination of subject and label. It's done by `aggregate()` function
   
 * Final step:
-  * Write the new tidy set into a text file called tidy2.txt, formatted similarly to the original files.
+  * Write the new tidy set into a text file called tidy_second.txt, formatted similarly to the original files.
