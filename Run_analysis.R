@@ -59,5 +59,5 @@ aggr.data <- aggregate(data.mean.std[, 3:ncol(data.mean.std)],
 
 ## step nothing
 # write the data for course upload
-write.table(format(aggr.data, scientific=T), "C:\\Users\\luca\\Desktop\\Getting-and-cleaning-data\\UCI HAR Dataset\\tidy2.txt",
+write.table(format(aggr.data, scientific=T), "C:\\Users\\luca\\Desktop\\Getting-and-cleaning-data\\UCI HAR Dataset\\tidy_second.txt",
             row.names=F, col.names=F, quote=2)
